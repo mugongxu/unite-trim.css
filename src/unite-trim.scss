@@ -1,0 +1,72 @@
+/*! 
+  unite-trim.css
+  @author: mugongxu
+  https://github.com/mugongxu/unite-trim.css
+ */
+
+@import 'config.scss';
+
+$ipt: if($tt-priority-promote, '!important', '');
+
+/* common loop props mixin */
+@mixin clp($prop-name-map, $prop-val-maps) {
+    @each $k, $v in $prop-val-maps {
+        .#{map-get($prop-name-map, 'abbr')}-#{$k} {
+            #{map-get($prop-name-map, 'name')}: $v#{$ipt}
+        }
+    }
+}
+
+@include clp((name: position, abbr: pos), (a: absolute, r: relative, s: static, f: fixed));
+@include clp((name: display, abbr: dp), (i: inline, b: block, n: none, ib: inline-block));
+@include clp((name: visibility, abbr: vs), (h: hidden, v: visible));
+@include clp((name: box-sizing, abbr: bs), (bb: border-box, cb: content-box));
+
+$overflow-value-map: (h: hidden, v: visible, s: scroll, a: auto);
+@include clp((name: overflow, abbr: of), $overflow-value-map);
+@include clp((name: overflow-x, abbr: ox), $overflow-value-map);
+@include clp((name: overflow-y, abbr: oy), $overflow-value-map);
+
+/* For priorities have position attribute */
+$pos-maps: (t: top, r: right, b: bottom, l: left);
+$min-level: if($tt-negative, -$tt-level, 0);
+@each $k, $v in $pos-maps {
+    @for $i from $min-level through $tt-level {
+        $current-step: $i * $tt-step;
+        $current-map: ($current-step: #{$current-step}#{$tt-unit});
+        @include clp((name: margin-#{$v}, abbr: m#{$k}), $current-map);
+        @include clp((name: $v, abbr: $k), $current-map);
+        @if($i >= 0) {
+            @include clp((name: padding-#{$v}, abbr: p#{$k}), $current-map);
+        }
+    }
+}
+
+@for $i from $min-level through $tt-level {
+    $current-step: $i * $tt-step;
+    $current-map: ($current-step: #{$current-step}#{$tt-unit});
+    @include clp((name: margin, abbr: m), $current-map);
+    @include clp((name: padding, abbr: p), $current-map);
+    @include clp((name: text-indent, abbr: ti), $current-map);
+}
+
+@include clp((name: text-align, abbr: ta), (l: left, r: right, c: center, j: justify, i: initial));
+
+/* font-size */
+@for $i from 0 through $fs-step {
+    $current-step: $i * 2 + $fs-level;
+    $current-map: ($current-step: #{$current-step}#{$tt-unit});
+    @include clp((name: font-size, abbr: fs), $current-map);
+}
+
+/* Others */
+.td-none {
+    text-decoration: none#{$ipt}
+}
+.bd-none {
+    border: none#{$ipt}
+}
+.wd-100 {
+    width: 100%#{$ipt}
+}
+/* End */

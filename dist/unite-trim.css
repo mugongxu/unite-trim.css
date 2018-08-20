@@ -1,0 +1,302 @@
+/*! 
+  unite-trim.css
+  @author: mugongxu
+  https://github.com/mugongxu/unite-trim.css
+ */
+.pos-a {
+  position: absolute
+}
+.pos-r {
+  position: relative
+}
+.pos-s {
+  position: static
+}
+.pos-f {
+  position: fixed
+}
+.dp-i {
+  display: inline
+}
+.dp-b {
+  display: block
+}
+.dp-n {
+  display: none
+}
+.dp-ib {
+  display: inline-block
+}
+.vs-h {
+  visibility: hidden
+}
+.vs-v {
+  visibility: visible
+}
+.bs-bb {
+  box-sizing: border-box
+}
+.bs-cb {
+  box-sizing: content-box
+}
+.of-h {
+  overflow: hidden
+}
+.of-v {
+  overflow: visible
+}
+.of-s {
+  overflow: scroll
+}
+.of-a {
+  overflow: auto
+}
+.ox-h {
+  overflow-x: hidden
+}
+.ox-v {
+  overflow-x: visible
+}
+.ox-s {
+  overflow-x: scroll
+}
+.ox-a {
+  overflow-x: auto
+}
+.oy-h {
+  overflow-y: hidden
+}
+.oy-v {
+  overflow-y: visible
+}
+.oy-s {
+  overflow-y: scroll
+}
+.oy-a {
+  overflow-y: auto
+}
+.mt-0 {
+  margin-top: 0
+}
+.t-0 {
+  top: 0
+}
+.pt-0 {
+  padding-top: 0
+}
+.mt-5 {
+  margin-top: 5px
+}
+.t-5 {
+  top: 5px
+}
+.pt-5 {
+  padding-top: 5px
+}
+.mt-10 {
+  margin-top: 10px
+}
+.t-10 {
+  top: 10px
+}
+.pt-10 {
+  padding-top: 10px
+}
+.mt-15 {
+  margin-top: 15px
+}
+.t-15 {
+  top: 15px
+}
+.pt-15 {
+  padding-top: 15px
+}
+.mr-0 {
+  margin-right: 0
+}
+.r-0 {
+  right: 0
+}
+.pr-0 {
+  padding-right: 0
+}
+.mr-5 {
+  margin-right: 5px
+}
+.r-5 {
+  right: 5px
+}
+.pr-5 {
+  padding-right: 5px
+}
+.mr-10 {
+  margin-right: 10px
+}
+.r-10 {
+  right: 10px
+}
+.pr-10 {
+  padding-right: 10px
+}
+.mr-15 {
+  margin-right: 15px
+}
+.r-15 {
+  right: 15px
+}
+.pr-15 {
+  padding-right: 15px
+}
+.mb-0 {
+  margin-bottom: 0
+}
+.b-0 {
+  bottom: 0
+}
+.pb-0 {
+  padding-bottom: 0
+}
+.mb-5 {
+  margin-bottom: 5px
+}
+.b-5 {
+  bottom: 5px
+}
+.pb-5 {
+  padding-bottom: 5px
+}
+.mb-10 {
+  margin-bottom: 10px
+}
+.b-10 {
+  bottom: 10px
+}
+.pb-10 {
+  padding-bottom: 10px
+}
+.mb-15 {
+  margin-bottom: 15px
+}
+.b-15 {
+  bottom: 15px
+}
+.pb-15 {
+  padding-bottom: 15px
+}
+.ml-0 {
+  margin-left: 0
+}
+.l-0 {
+  left: 0
+}
+.pl-0 {
+  padding-left: 0
+}
+.ml-5 {
+  margin-left: 5px
+}
+.l-5 {
+  left: 5px
+}
+.pl-5 {
+  padding-left: 5px
+}
+.ml-10 {
+  margin-left: 10px
+}
+.l-10 {
+  left: 10px
+}
+.pl-10 {
+  padding-left: 10px
+}
+.ml-15 {
+  margin-left: 15px
+}
+.l-15 {
+  left: 15px
+}
+.pl-15 {
+  padding-left: 15px
+}
+.m-0 {
+  margin: 0
+}
+.p-0 {
+  padding: 0
+}
+.ti-0 {
+  text-indent: 0
+}
+.m-5 {
+  margin: 5px
+}
+.p-5 {
+  padding: 5px
+}
+.ti-5 {
+  text-indent: 5px
+}
+.m-10 {
+  margin: 10px
+}
+.p-10 {
+  padding: 10px
+}
+.ti-10 {
+  text-indent: 10px
+}
+.m-15 {
+  margin: 15px
+}
+.p-15 {
+  padding: 15px
+}
+.ti-15 {
+  text-indent: 15px
+}
+.ta-l {
+  text-align: left
+}
+.ta-r {
+  text-align: right
+}
+.ta-c {
+  text-align: center
+}
+.ta-j {
+  text-align: justify
+}
+.ta-i {
+  text-align: initial
+}
+.fs-12 {
+  font-size: 12px
+}
+.fs-14 {
+  font-size: 14px
+}
+.fs-16 {
+  font-size: 16px
+}
+.fs-18 {
+  font-size: 18px
+}
+.fs-20 {
+  font-size: 20px
+}
+.fs-22 {
+  font-size: 22px
+}
+.fs-24 {
+  font-size: 24px
+}
+.td-none {
+  text-decoration: none
+}
+.bd-none {
+  border: none
+}
+.wd-100 {
+  width: 100%
+}

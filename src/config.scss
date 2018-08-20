@@ -1,0 +1,43 @@
+/*
+  $tt-step
+  For margin, padding, position (top, right, bottom and left properties)
+  $fs-level
+ */
+$tt-step: 5;
+
+/*
+  $tt-negative
+  The result of $tt-step will be -15, -10, -5, 0, 5, 10, 15 while actived this value
+ */
+$tt-negative: false;
+
+/*
+  $tt-level
+  The times of $tt-step repeat multiple increase
+  The result of $tt-step will be 0, 5, 10, 15, 20, 25 while this value changed to 5
+ */
+$tt-level: 3;
+
+/*
+  $tt-unit
+ */
+$tt-unit: px;
+
+/*
+  $tt-priority-promote
+  Add '!important' keyword after all properties of tiny trimming classes while this item actived
+ */
+$tt-priority-promote: false;
+
+/*
+  $fs-level
+  The times of $fs-step repeat multiple increase
+  The result of $tt-step will be 12, 14, 16, 18, 20, 22, 24 while this value changed to 2
+*/
+$fs-level: 12;
+
+/*
+  $fs-step
+  For font-size increase
+*/
+$fs-step: 6;
